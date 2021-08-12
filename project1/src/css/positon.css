@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.basic{
+    position: relative;
+    width: 350px;
+    height: 400px;
+    left: 50%;
+    top: 220px;
+    transform: translateX(-50%);
+}
+.basic_h1{
+        position: relative;
+        opacity: 0;
+        top: -100px;
+        left: -50%;
+        -webkit-transition: all 0.7s;
+        transition: all 0.7s;
+    }
+.basic:hover .basic_h1 {
+    opacity: 1;
+    top: 0;
+    left: 42%;
+
+}
+.basic_p{
+        position: relative;
+        opacity: 0;
+        top: -100px;
+        right: -50%;
+        -webkit-transition: all 0.7s;
+        transition: all 0.7s;
+    }
+.basic:hover .basic_p {
+    opacity: 1;
+    top: 0;
+    right: 42px;
+
+}
+.basic_promo:before{
+    content: "salomsas";
+     position: relative;
+    opacity: 0;
+    top: -50px;
+    left: -30px;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+    width: 100px;
+    height: 2px;
+}
+.basic_promo:hover:before{
+        opacity: 1;
+        left: 20%;
+        top: 0;
+
+
+}
+.basic_promo:after{
+    content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScLMnhk1CzZ3sDs4wt8tvt00RzC5lkvVsJAw&usqp=CAU");
+     position: relative;
+    opacity: 0;
+    top: -50px;
+    left: -30px;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+    width: 100px;
+    height: 2px;
+}
+.basic_promo:hover:after{
+        opacity: 1;
+        left: 0;
+        top: 0;
+
+
+}
+.basic:after{
+    content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFa3-WL18N_OOpa7Q-SxDy9RUKzBSXOwgP_w&usqp=CAU");
+     position: relative;
+    opacity: 0;
+    top: -50px;
+    left: -30px;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+    width: 100px;
+    height: 2px;
+}
+.basic:hover:after{
+        opacity: 1;
+        left: 100px;
+        top: 20px;
+
+
+}
